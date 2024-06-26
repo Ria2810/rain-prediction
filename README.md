@@ -21,7 +21,7 @@ Here due to my system compatibility is very low. So I havent done hyperparameter
 
 # Workflow
 
-# Data Collection: 
+## Data Collection: 
 [Rainfall Prediction in Australia dataset](https://www.kaggle.com/jsphyg/weather-dataset-rattle-package) from Kaggle
 # Data Preprocessing: 
 * Missing Values Handled by Random Sample imputation to maintain the variance
@@ -30,7 +30,7 @@ Here due to my system compatibility is very low. So I havent done hyperparameter
 * Feature Selection and was done but didnt perform well it can be seen in testing_notebook/Prediction.ipynb
 * Feature Scaling didnt give a lot of difference it also can be seen in testing_notebook/RainPrediction1.ipynb
 * Imbalanced Dataset was handled using SMOTE
-# Model Creation:
+## Model Creation:
 * Different types of models were tried like catboost, random forest, logistic regression, xgboost, support vector machines, knn, naive bayes.
 * Out of these catboost, random forest and support vector machines were top 3
 * The conclusion were made using classification metrics. roc curve and auc score
