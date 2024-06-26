@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href={{url_for('static',filename='after_rainy.css')}}>
+    <title>Rainy Day</title>
+    <style>
+        /* Add a rain effect to the background */
+        body {
+            background-image: linear-gradient(to bottom, #87CEEB, #4682B4);
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+            animation: rain 3s ease-in-out infinite;
+        }
+
+        @keyframes rain {
+            0% {
+                background-position: 0% 100%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        /* Add a cloud animation to the header */
+        h1 {
+            animation: cloud 5s ease-in-out infinite;
+        }
+
+        @keyframes cloud {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(20px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* Add a raindrop animation to the image */
+        .rainyimg img {
+            animation: raindrop 2s ease-in-out infinite;
+        }
+
+        @keyframes raindrop {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Add a ripple effect to the text */
+        h2 span {
+            animation: ripple 2s ease-in-out infinite;
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 3rem; font-weight: bolder">RAINY DAY</h1>
+    <div class="cloud"></div>
+    <div class="lightning"></div>
+    <div class="rainyimg">
+        <img src="../static/rainy.jpg" style="height: 550px; width: 550px; margin-left: 32%">
+    </div>
+    <div>
+        <h2><center> Tomorrow is going to be <span style="font-style: italic; font-weight: bolder;">rainy day</span>. So enjoy yourselves 
+        with a cup of coffee and hot snack </center></h2>
+    </div>
+</body>
